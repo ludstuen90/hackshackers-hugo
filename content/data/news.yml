@@ -1,0 +1,65 @@
+---
+- name: News Product Alliance Summit
+  date: March 30-31
+  location: Online
+  url: https://newsproduct.org/
+
+- name: "#UNCOVERED Conference"
+  date: April 14-15
+  location: Online
+  url: https://www.investigativejournalismforeu.net/events/save-the-date-uncovered-conference-april-14-15/
+
+- name: SKUP Conference
+  date: April 15-16
+  location: Online
+  url: https://www.skup.no/2021/02/slik-melder-du-deg-pa-arets-skup
+
+- name: Pulitzer Center Conference
+  date: April 20-23
+  location: Online
+  url: https://pulitzercenter.org/blog/save-date-2021-pulitzer-center-conference
+
+- name: International Symposium on Online Journalism
+  date: April 26-30
+  location: Online
+  url: https://latamjournalismreview.org/articles/mark-your-calendars-for-isoj-online-2021-the-premier-global-journalism-conference-will-be-held-from-april-26-30/
+
+- name: World Press Freedom Day Conference
+  date: May 1-3
+  location: Namibia
+  url: https://en.unesco.org/news/world-press-freedom-day-coming-home-namibia-host-wpfd-2021-conference
+
+- name: Assises Internationales du Journalisme de Tours
+  date: May 18-21
+  location: France
+  url: https://www.journalisme.com/les-assises-2020/14e-assises-internationales-du-journalisme-de-tours/
+
+- name: RightsCon
+  date: June 7-11
+  location: Online
+  url: https://www.rightscon.org
+
+- name: Global Media Forum
+  date: June 14-15
+  location: Germany
+  url: https://www.dw.com/en/about-dw/gmf/s-43101535
+
+- name: Investigative Reporters & Editors Conference
+  date: June 14-18
+  location: Online
+  url: https://www.ire.org/training/conferences/ire-2021/
+
+- name: SRCCON
+  date: August 11-13
+  location: Online
+  url: https://srccon.org/
+
+- name: Lviv Media Forum
+  date: August 26-28
+  location: Ukraine
+  url: https://www.facebook.com/events/lviv-media-forum/lviv-media-forum-2021/312314519660237/
+
+- name: GIJN Conference
+  date: November 3-5
+  location: Online
+  url: https://gijn.org/2021/03/24/the-global-investigative-journalism-conference-goes-online-oct-2021-we-head-to-sydney-in-22/

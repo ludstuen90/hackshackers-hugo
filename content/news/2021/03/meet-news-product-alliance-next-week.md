@@ -1,10 +1,11 @@
 ---
 Title: Meet the News Product Alliance next week
-authors: 
+authors:
 - Samantha Sunne
-date: "2021-03-21" 
-categories: 
+date: "2021-03-21"
+categories:
 - Newsletter
+
 ---
 
 Greetings, hacks and hackers! The [News Product Alliance](https://newsproduct.org), [launched last year](https://medium.com/@beccaaaronson/why-i-quit-my-job-to-launch-the-news-product-alliance-a3694a5f8ab5) by H/H Austin co-organizer Becca Aaronson, is holding its first event next week.
@@ -49,24 +50,9 @@ The first [News Product Alliance Summit](https://newsproduct.org/summit) is open
 
 **Upcoming events:**
 
-
-
-*   March 30-31, Online, [News Product Alliance Summit](https://newsproduct.org/)
-*   April 14-15, Online, [#UNCOVERED Conference](https://www.investigativejournalismforeu.net/events/save-the-date-uncovered-conference-april-14-15/)
-*   April 15-16, Online, [SKUP Conference](https://www.skup.no/2021/02/slik-melder-du-deg-pa-arets-skup)
-*   April 20-23, Online, [Pulitzer Center Conference](https://pulitzercenter.org/blog/save-date-2021-pulitzer-center-conference)
-*   April 26-30, Online, [International Symposium on Online Journalism](https://latamjournalismreview.org/articles/mark-your-calendars-for-isoj-online-2021-the-premier-global-journalism-conference-will-be-held-from-april-26-30/) 
-*   May 1-3, Namibia, [World Press Freedom Day Conference](https://en.unesco.org/news/world-press-freedom-day-coming-home-namibia-host-wpfd-2021-conference)
-*   May 18-21, France, [Assises Internationales du Journalisme de Tours](https://www.journalisme.com/les-assises-2020/14e-assises-internationales-du-journalisme-de-tours/) 
-*   June 7-11, Online, [RightsCon](https://www.rightscon.org)
-*   June 14-15, Germany, [Global Media Forum](https://www.dw.com/en/about-dw/gmf/s-43101535)
-*   June 14-18, Online, [Investigative Reporters & Editors Conference](https://www.ire.org/training/conferences/ire-2021/)
-*   August 11-13, Online, [SRCCON](https://srccon.org/)
-*   August 26-28, Ukraine, [Lviv Media Forum](https://www.facebook.com/events/lviv-media-forum/lviv-media-forum-2021/312314519660237/)
+{{< upcoming_events >}}
 
 **Other opportunities:**
-
-
 
 *   Rolling deadline, [Funding from Google to fact-check vaccine misinformation](https://blog.google/outreach-initiatives/google-news-initiative/open-fund-projects-debunking-vaccine-misinformation/)
 *   Rolling deadline, [Funding to cover Covid in Black Sea countries](https://www.gmfus.org/program/black-sea-trust-regional-cooperation)

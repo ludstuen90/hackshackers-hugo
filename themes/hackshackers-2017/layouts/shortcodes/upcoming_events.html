@@ -1,0 +1,5 @@
+<ul>
+{{ range.Site.Data.news }}
+<li>{{.date}}, {{.location}}, <a href="{{.url}}" target="_blank">{{ .name }}</a></li>
+{{ end }}
+</ul>
