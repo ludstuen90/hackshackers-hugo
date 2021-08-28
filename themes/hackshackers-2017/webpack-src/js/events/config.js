@@ -3,8 +3,8 @@
  */
 
 export const calendarFeed = ('localhost' === window.location.hostname) ?
-  '//Users/lukasudstuen/codigo/test.ics' :
-  '/lib/hackshackers.ical';
+  '/test.ics' :
+  '/test.ics';
 
 // export const calendarFeed = '//Users/lukasudstuen/codigo/test.ics';
 

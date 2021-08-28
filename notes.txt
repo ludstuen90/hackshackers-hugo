@@ -1,0 +1,7 @@
+me?fields=id,name
+ will need pages_read_engagement permission to be able to see public data of the page, including events. 
+
+
+we are making it to load the calendar. but for some reason it is not parsing correctly the data. it says there is a null value in trying to parse indexOf. inside of ical file.
+
+maybe that means my ical is badly formed. it probably does.  

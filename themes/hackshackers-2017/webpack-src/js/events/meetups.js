@@ -58,7 +58,9 @@ function _renderAll(events, el, opts) {
 function _renderSingle(evt, evtTemplate, opts) {
   const title = _getEventTitle(evt);
   const link = evt.url;
-  const date = `${fecha.format(evt[opts.orderBy], 'MMM D')}`;
+  //const date = `${fecha.format(evt[opts.orderBy], 'MMM D')}`;
+
+  const date = evt.dtstart;
 
   // Uses <%- var %> in the template to escape strings
   const compiled = template(evtTemplate);
@@ -75,10 +77,10 @@ function _getEventTitle(evt) {
   let title = '';
 
   // For Meetup events, group name will be the first line of the description
-  if (0 === evt.url.indexOf('https://www.meetup.com')) {
-    title += evt.description.split("\n")[0]; // eslint-disable-line quotes
-    title += ': ';
-  }
+//  if (0 === evt.url.indexOf('https://www.meetup.com')) {
+//    title += evt.description.split("\n")[0]; // eslint-disable-line quotes
+//    title += ': ';
+//  }
 
   // evt.summary will usually contain the event-specific info
   return title + evt.summary;
@@ -99,10 +101,10 @@ function _filterEvents(map, opts) {
   // Break into future/past lists
   Object.keys(map).forEach((key) => {
     const item = map[key];
-    const compareTime = item[opts.orderBy].getTime();
+    // const compareTime = item[opts.orderBy].getTime();
 
     // Add to future or past queue
-    if (compareTime > opts.compareTime) {
+    if (true) {
       futureEvents.push(item);
     } else {
       pastEvents.push(item);
@@ -110,10 +112,10 @@ function _filterEvents(map, opts) {
   });
 
   // Sort the future/past queues in ASC order
-  futureEvents.sort((first, second) =>
-    _compareFunc(first, second, opts.orderBy));
-  pastEvents.sort((first, second) =>
-    _compareFunc(first, second, opts.orderBy, false));
+//  futureEvents.sort((first, second) =>
+//    _compareFunc(first, second, opts.orderBy));
+//  pastEvents.sort((first, second) =>
+//    _compareFunc(first, second, opts.orderBy, false));
 
   // ASC - Append future events to past events
   if ('ASC' === opts.order) {
