@@ -95,7 +95,7 @@ function _getEventTitle(evt) {
  */
 function _filterEvents(map, opts) {
   const futureEvents = [];
-  const pastEvents = [];
+  const pastEvents = futureEvents;
 
   // Assume unordered key-value pairs
   // Break into future/past lists
@@ -109,6 +109,7 @@ function _filterEvents(map, opts) {
     } else {
       pastEvents.push(item);
     }
+
   });
 
   // Sort the future/past queues in ASC order
