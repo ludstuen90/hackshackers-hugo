@@ -1,6 +1,7 @@
 var path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HHCleanup = require('./plugins/HHCleanup');
+const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 
 var webpackConfig = {
@@ -16,7 +17,10 @@ var webpackConfig = {
     jsonpFunction: 'hackshackersJsonp'
   },
   plugins: [
-    new ExtractTextPlugin('[name].css'),
+    new webpack.LoaderOptionsPlugin({ options: {} }),
+    new MiniCssExtractPlugin({
+         filename: '[name].css'
+         }),
   ],
   module: {
     rules: [
@@ -29,27 +33,36 @@ var webpackConfig = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: "babel-loader", 
-        include: path.resolve(__dirname, 'js'),
+        use: { 
+          loader: 'babel-loader',
+              // include: path.resolve(__dirname, 'js'),
+               options: {
+                 presets: ['@babel/preset-env'],
+               },
+       }
       },
+
      {
         test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-            fallback: 'style-loader',
-            use: [
-              {
+        use:[{
+           loader:  MiniCssExtractPlugin.loader,
+//            options: {
+ //               fallback: 'style-loader'
+  //            }
+              },
+            {
                 loader: 'css-loader', 
                 options: {
-                  plugins: () => [autoprefixer()],
+                 // plugins: () => [autoprefixer()],
                  sourceMap: true,
                  },
               },
               {
                 loader: 'postcss-loader',
                 options: {
-                  plugins: () => [autoprefixer()],
                  postcssOptions: {
                    parser: "postcss-scss",
+                  plugins: () => [autoprefixer()],
                    },
                 }
               }, 
@@ -60,9 +73,7 @@ var webpackConfig = {
                },
              },
 
-          ]
-        })
-      },
+          ]},
       {
         test: /\.png$/,
         use: [{
